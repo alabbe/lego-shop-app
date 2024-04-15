@@ -37,4 +37,17 @@ ContactsController.get('/:contactId', async (req, res, next) => {
   }
 });
 
+ContactsController.post('/', async (req, res, next) => {
+  try {
+    const { firstname, lastname, email, birthdate, phone } = req.body.contactForm;
+    const newContact = await contactsService.create(firstname, lastname, email, birthdate, phone)
+    if (newContact) {
+      res.status(201).send(newContact);
+    }
+  } catch (error) {
+    console.error(`Error while creating contact`, error);
+    next(error);
+  }
+});
+
 export { ContactsController }
