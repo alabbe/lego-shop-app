@@ -1,4 +1,4 @@
-import React, { FormEventHandler } from "react";
+import { FormEventHandler } from "react";
 import ContacFormPayload from "./contactFormPayload";
 
 const ContactForm = ({formData, message, onSubmit, onChange} : {formData: ContacFormPayload, message: string, onSubmit: FormEventHandler, onChange: FormEventHandler}) => {
