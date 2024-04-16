@@ -36,14 +36,14 @@ const HomePage = () => {
   };
 
   return (
-    <>
+    <div>
       <section className='mx-4'>
         <Product />
       </section>
       <section className='bg-slate-200'>
         <ContactForm onSubmit={handleSubmit} onChange={handleChange} formData={contactFormData} message={message} />
       </section>
-    </>
+    </div>
   );
 }
 

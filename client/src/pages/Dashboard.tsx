@@ -24,7 +24,7 @@ const Dashboard = () => {
     }, []);
 
     return (
-      <section className='mx-4 flex flex-col space-y-4'>
+      <section className='mx-4 flex flex-col space-y-4 my-8'>
         <h2 className='font-semibold text-xl  text-blue-800'>Liste des contacts</h2>
         <ContactsList contacts={contacts} />
       </section>

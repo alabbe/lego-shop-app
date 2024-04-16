@@ -4,7 +4,7 @@ import LoginFormPayload from "./loginFormPayload";
 const LoginForm = ({onSubmit, onChange, formData} : {onSubmit: FormEventHandler, onChange: FormEventHandler, formData: LoginFormPayload}) => {
 
   return (
-    <div className='flex flex-col mx-4 my-8 gap-4'>
+    <div className='flex flex-col mx-4 my-8 gap-4 p-5'>
       <h2 className='font-semibold text-xl  text-blue-800'>Connexion à l'administration</h2>
     <form className='flex flex-col gap-2' onSubmit={onSubmit}>
       <label htmlFor='username' className='text-neutral-600'>Nom d'utilisateur*</label>

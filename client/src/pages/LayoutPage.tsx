@@ -15,7 +15,7 @@ const LayoutPage = () => {
           <LoginButton />
         </div>
       </header>
-      <main className='mt-32 flex flex-col space-y-4 gap-8'>
+      <main className='mt-32 lg:w-[650px] xl:w-[800px] mx-auto'>
         <Outlet />
       </main>
       <footer className='bg-black w-full h-20 bottom-0'></footer>
