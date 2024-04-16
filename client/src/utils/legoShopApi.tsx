@@ -1,8 +1,8 @@
 import ContactFormPayload from "../components/contactForm/contactFormPayload";
 import LoginFormPayload from "../components/loginForm/loginFormPayload";
 
-const contactsEndpoint = 'http://localhost:4000/api/contacts';
-const usersEndpoint = 'http://localhost:4000/api/users';
+const contactsEndpoint = "/api/contacts";
+const usersEndpoint = "/api/users";
 
 const LegoShopApi = {
 

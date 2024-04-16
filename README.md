@@ -14,22 +14,37 @@ Hors scope :
 
 ## Technologies utilisées
 
-Frontend : React + Tailwind + Typescript
-Backend :  Express + Typescript
-SGBD : Postgresql
+- Frontend : React + Tailwind + Typescript
+- Backend :  Express + Typescript
+- SGBD : Postgresql
 
 ## Installation
 
 ### Base de données
 
 - Executer le script situé dans src/db pour créer les tables.
-- Insérer une utilisateur dans la table Users
+- Insérer un utilisateur dans la table Users
 
-## Configuration
+## Execution en dev
 
 - Créer un fichier .env (utiliser le fichier d'exemple .env.sample) et renseigner vos variables d'environnement
 
-- Exécuter npm run dev
+- Exécuter :
+```
+npm install
+npm run dev
+```
+
+## Execution en prod
+
+- Exécuter :
+```
+npm install
+npm run build
+npm install --prefix client
+npm run build --prefix client
+npm start
+```
 
 
 
