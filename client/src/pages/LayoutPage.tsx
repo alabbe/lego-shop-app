@@ -7,7 +7,7 @@ const LayoutPage = () => {
     <div className='w-full min-w-xl'>
       <header className='bg-yellow-400 absolute w-full top-0 h-24 flex items-center'>
         <div className='grow ml-4'>
-          <NavLink href='/'>
+          <NavLink to='/'>
             <h1 className='font-bold text-2xl text-black text-left'>Lego Shop</h1>
           </NavLink>
         </div>

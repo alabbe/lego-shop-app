@@ -3,8 +3,8 @@
     "baseUrl": ".",
     "target": "es2020",
     "module": "CommonJS",
-    "lib": ["esnext"],
-    "moduleResolution": "node",
+    "lib": ["esnext", "dom"],
+    "moduleResolution": "Node",
     "esModuleInterop": true,
     "strict": true,
     "strictNullChecks": true,
@@ -17,6 +17,7 @@
     "paths": {
       "~/*": ["./src/*"],
       "~~/*": ["./*"]
-    }
+    },
+    "skipLibCheck": true
   }
 }

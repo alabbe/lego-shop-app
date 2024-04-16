@@ -2,10 +2,10 @@
   "name": "lego-shop-app",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "dist/src/index.js",
   "scripts": {
-    "build": "npx tsc",
-    "start": "node dist/index.js",
+    "build": "npx tsc --jsx react-jsx",
+    "start": "node dist/src/index.js",
     "server": "nodemon src/index.ts",
     "client": "npm run dev --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
@@ -34,6 +34,9 @@
     "@types/pg": "^8.11.5",
     "nodemon": "^3.1.0",
     "ts-node": "^10.9.2",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "@types/react": "^18.2.79",
+    "@types/react-dom": "^18.2.25",
+    "@vitejs/plugin-react": "^4.2.1"
   }
 }
