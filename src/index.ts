@@ -19,12 +19,12 @@ app.use(
     extended: true,
   })
 );
-app.use(session({
+/* app.use(session({
   secret: "This is a secret",
   resave: false,
   saveUninitialized: false
 }));
-initPassport(app);
+initPassport(app); */
 
 
 app.get('/', (request, response) => {
