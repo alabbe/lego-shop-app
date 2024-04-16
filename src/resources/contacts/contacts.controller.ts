@@ -40,7 +40,8 @@ ContactsController.get('/:contactId', async (req, res, next) => {
 ContactsController.post('/', async (req, res, next) => {
   try {
     const { firstname, lastname, email, birthdate, phone } = req.body.contactForm;
-    const newContact = await contactsService.create(firstname, lastname, email, birthdate, phone)
+    let formatedDate = birthdate || null;
+    const newContact = await contactsService.create(firstname, lastname, email, formatedDate, phone)
     if (newContact) {
       res.status(201).send(newContact);
     }

@@ -16,7 +16,7 @@ const Dashboard = () => {
         firstname: contact.firstname,
         lastname: contact.lastname,
         email: contact.email,
-        birthdate: contact.birthdate,
+        birthdate: contact.birthdate ? new Date(contact.birthdate).toLocaleDateString() : "",
         phone: contact.phone
       }));
       setContacts([...contactsList]);

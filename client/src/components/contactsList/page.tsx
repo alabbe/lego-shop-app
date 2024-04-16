@@ -3,7 +3,7 @@ import ContactModel from "../../model/ContactModel";
 const ContactsList = ({ contacts }: { contacts: ContactModel[] }) => {
 
   let list = contacts.map((contact: ContactModel) => 
-    <tr>
+    <tr key={contact.id}>
       <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-neutral-200">{contact.firstname}</td>
       <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-neutral-200">{contact.lastname}</td>
       <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-neutral-200">{contact.email}</td>

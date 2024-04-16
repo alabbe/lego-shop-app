@@ -4,7 +4,7 @@ import ContacFormPayload from "./contactFormPayload";
 const ContactForm = ({formData, message, onSubmit, onChange} : {formData: ContacFormPayload, message: string, onSubmit: FormEventHandler, onChange: FormEventHandler}) => {
 
   return (
-    <div className='flex flex-col mx-4 my-8 gap-4'>
+    <div className='flex flex-col mx-4 my-8 gap-4 p-5'>
       <h2 className='font-semibold text-xl  text-blue-800'>Contactez-nous</h2>
       <p className='font-light text-neutral-500 italic'>Vous souhaitez être averti de la disponibilité de ce produit rare ? Envoyez ce formulaire et vous serez contacté dés que le produit sera disponible.</p>
       
